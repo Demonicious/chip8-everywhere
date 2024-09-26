@@ -1,0 +1,8 @@
+[package]
+name = "desktop-sdl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chip8-cpu = { path = "../../chip8-cpu" }
+clap = { version = "4.5.18", features = ["derive"] }
