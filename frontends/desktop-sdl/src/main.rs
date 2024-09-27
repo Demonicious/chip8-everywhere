@@ -19,6 +19,10 @@ fn main() {
     let mut buffer: Vec<u8> = Vec::new();
     file.read_to_end(&mut buffer).unwrap();
 
+
     chip8.load_rom(&buffer);
-    chip8.tick();
+    
+    loop {
+        chip8.tick();
+    }
 }
